@@ -1,0 +1,54 @@
+.detail-popup {
+    position: fixed;
+    top:0;
+    left:10%;
+    width:70%;
+    height:80%;
+    background-color: black;
+    margin-top: 2%;
+    padding:5%;
+    padding-top: 2%;
+    overflow-y: scroll;
+    color:white;
+
+}
+
+hr{
+    width:100%;
+}
+.detail-card{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+.detail-popup button{
+    align-self: flex-end;
+    font-size: 2em;
+    background-color: red;
+}
+
+.detail-rows {
+   display:grid;
+   grid-auto-flow: row;
+    gap:10%;
+    overflow-wrap: normal;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-rows div {
+    font-size: 1.5em;
+    padding:1em;
+    min-width: 30%;
+    border: 2px solid black;
+}
+
+.closer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+}
