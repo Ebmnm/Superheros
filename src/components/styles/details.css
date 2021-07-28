@@ -10,6 +10,8 @@
     padding-top: 2%;
     overflow-y: scroll;
     color:white;
+    display:block;
+    z-index: 3;
 
 }
 
@@ -31,8 +33,8 @@ hr{
 .detail-rows {
    display:grid;
    grid-auto-flow: row;
-    gap:10%;
-    overflow-wrap: normal;
+    gap:4%;
+    overflow-wrap: break-word;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -51,4 +53,20 @@ hr{
     right: 0;
     content: ' ';
     background: rgba(0,0,0,.5);
+  
 }
+
+@media (max-width:700px) {
+  .detail-popup{
+      width:90%;
+      left:5%;
+      padding:0;
+     
+  }
+
+  .detail-rows div {
+      padding: 0.3em;
+    
+  }
+  
+ }

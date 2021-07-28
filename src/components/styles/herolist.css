@@ -23,14 +23,7 @@ background: linear-gradient(90deg, rgba(65,64,63,1) 0%, rgba(41,126,145,1) 100%)
     font-style: bold;
 }
 
-/* img{
-    size:cover;
-}
-.img-container{
-width:100%;
-height:50%;
-}
- */
+
  .details-button {
     color: black;
     text-transform: uppercase;
@@ -47,4 +40,23 @@ height:50%;
  .details-button:hover{
         background:#156481;
         color:white;
+ }
+
+ @media (max-width:1100px) {
+     .hero-list {
+        grid-template-columns: repeat(3, 1fr);
+     }
+ }
+
+ @media (max-width:800px) {
+    .hero-list {
+        grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
+ @media (max-width:540px) {
+    .hero-list {
+        grid-template-columns: repeat(1, 1fr);
+     }
+  
  }

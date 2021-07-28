@@ -7,10 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>Superheros</h1>
-  <HeroList
-  /* heros={heros}
-  heroPics = {heroPics} */
-  />
+  <HeroList />
     </div>
   );
 }
