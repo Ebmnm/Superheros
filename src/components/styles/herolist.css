@@ -1,5 +1,5 @@
 .hero-card {
-border: 2px solid black;
+border: 8px solid black;
 width:250px;
 display:flex;
 flex-direction: column;

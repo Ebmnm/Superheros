@@ -24,11 +24,7 @@ hr{
     width:100%;
     
 }
-.detail-popup button{
-    align-self: flex-end;
-    font-size: 2em;
-    background-color: red;
-}
+
 
 .detail-rows {
    display:grid;
@@ -54,6 +50,15 @@ hr{
     content: ' ';
     background: rgba(0,0,0,.5);
   
+}
+
+img{
+    size:contain;
+    border-radius: 50%;
+}
+
+.img-container{
+    margin:auto;
 }
 
 @media (max-width:700px) {
