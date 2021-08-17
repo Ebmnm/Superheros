@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/details.css";
-export default function Details({ heroData, selected, setDetails }) {
+export default function Details({ filteredHeros, heroData, selected, setDetails }) {
   function close() {
     setDetails(false);
   }
 
-  const hero = heroData[selected];
+  const hero = filteredHeros[selected];
   return (
     <div onClick={close} className="closer">
       <section className="detail-popup">
@@ -14,7 +14,7 @@ export default function Details({ heroData, selected, setDetails }) {
             <img src={hero.images.sm} />
             </div>
             <div />
-            <h1> {heroData[selected].name} </h1>
+            <h1> {hero.name} </h1>
             <hr />
             <div className="detail-rows">
               <div>
